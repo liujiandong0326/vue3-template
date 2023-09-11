@@ -10,6 +10,7 @@ import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite' // 自动引入自定义组件
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers' // 配置自动引入 element plus
 import Layouts from 'vite-plugin-vue-layouts'
+import { VitePWA } from 'vite-plugin-pwa'
 
 import UnoCSS from 'unocss/vite'
 
@@ -45,6 +46,9 @@ export default defineConfig({
     Layouts({
       layoutsDirs: 'src/layouts',
       defaultLayout: 'default'
+    }),
+    VitePWA({
+      registerType: 'autoUpdate'
     })
   ],
   resolve: {
