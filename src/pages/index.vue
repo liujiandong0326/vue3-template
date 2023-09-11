@@ -8,6 +8,8 @@
       <p>y: {{ y }}</p>
       <p>isOutside: {{ isOutside }}</p>
     </div>
+    <HelloWorld />
+    <UserUserComponent />
   </div>
 </template>
 
